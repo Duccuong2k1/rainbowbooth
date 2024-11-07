@@ -6,7 +6,7 @@ type Props = {}
 
 export default function HeaderTopBar({}: Props) {
   return (
-    <section className="bg-[#312d2c] py-2 text-white">
+    <section className="bg-[#312d2c] py-2 text-white lg:block hidden">
       <div className="flex flex-row items-center justify-between  container ">
         <div className="flex flex-row items-center justify-start gap-x-8">
           <RowItemLabel icon={<LuMapPin />} label={"Ho Chi Minh City"} />

@@ -1,34 +1,37 @@
+import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa"
 import { RiInstagramFill } from "react-icons/ri"
+import LogoDefault from "@/public/assets/imgs/logo-rainbow.png"
+import { MENU_MAIN } from "@/constants/default"
 
 type Props = {}
 
 export default function HeaderMain({}: Props) {
   return (
-    <section className="container py-4 grid grid-cols-3 items-center gap-8">
+    <section className="container grid grid-cols-1 lg:grid-cols-3 items-center gap-8">
       <div className="flex-row hidden lg:flex items-center justify-start gap-6">
-        <MenuItem label="Trang chủ" href="/" />
-        <MenuItem label=" Giới thiệu" href="/" />
-        <MenuItem label="Sự kiện" href="/" />
-        <MenuItem label="Liên hệ" href="/" />
+        {MENU_MAIN.map((menu, idx) => (
+          <MenuItem label={menu.label} href={menu.href} key={idx} />
+        ))}
       </div>
-      <Link href={"/"} className="flex flex-col items-center ">
-        <div className="font-semibold text-6xl">RB</div>
-        <div>Rainbow Booth</div>
+      <Link href={"/"} className="flex flex-col items-center">
+        <Image src={LogoDefault} width={100} height={60} alt="Logo rainbow booth" />
+        {/* <div className="font-semibold text-6xl">RB</div>
+        <div>Rainbow Booth</div> */}
       </Link>
       <div className="lg:flex hidden flex-row items-center justify-end gap-3">
-        <Link href={"/"} className="text-xl hover:text-red-500">
+        <Link href={"/"} className="text-xl  hover:text-red-500">
           <FaYoutube />
         </Link>
-        <Link href={"/"} className="text-xl hover:text-blue-500">
+        <Link href={"https://www.facebook.com/RainbowBoothVN"} className="text-xl  hover:text-blue-500">
           <FaFacebookF />
         </Link>
-        <Link href={"/"} className="text-xl hover:text-orange-500">
+        <Link href={"https://www.instagram.com/event.rainbowbooth/"} className="text-xl  hover:text-orange-500">
           <RiInstagramFill />
         </Link>
-        <Link href={"/"} className="text-xl hover:text-blue-500">
+        <Link href={"/"} className="text-xl  hover:text-blue-500">
           <FaTwitter />
         </Link>
       </div>
@@ -38,7 +41,7 @@ export default function HeaderMain({}: Props) {
 
 function MenuItem({ label, href }: { label: string; href: string }) {
   return (
-    <Link href={href || "/"} className="font-medium text-lg hover:text-orange-500">
+    <Link href={href || "/"} className="font-semibold text-md hover:text-orange-700 uppercase text-nowrap">
       {label}
     </Link>
   )
