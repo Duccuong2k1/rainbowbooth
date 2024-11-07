@@ -1,8 +1,6 @@
 import React from "react"
 
-type Props = {}
-
-export default function MainSlogan({}: Props) {
+export default function MainSlogan() {
   return (
     <section className="container text-center flex flex-col items-center justify-center h-[450px]">
       <h2 className="text-4xl font-semibold w-[50%] my-0 mx-auto">

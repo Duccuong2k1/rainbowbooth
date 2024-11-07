@@ -2,9 +2,7 @@ import React from "react"
 import { LuClock5, LuMapPin } from "react-icons/lu"
 import { MdOutlineEmail, MdOutlineLocalPhone } from "react-icons/md"
 
-type Props = {}
-
-export default function HeaderTopBar({}: Props) {
+export default function HeaderTopBar() {
   return (
     <section className="bg-[#312d2c] py-2 text-white lg:block hidden">
       <div className="flex flex-row items-center justify-between  container ">

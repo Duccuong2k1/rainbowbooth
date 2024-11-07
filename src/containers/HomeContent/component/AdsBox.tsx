@@ -1,7 +1,6 @@
 import React from "react"
-type Props = {}
 
-export default function AdsBox({}: Props) {
+export default function AdsBox() {
   return (
     <div
       className="relative bg-no-repeat bg-center bg-cover h-[300px] w-full"

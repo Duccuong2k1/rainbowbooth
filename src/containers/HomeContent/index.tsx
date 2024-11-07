@@ -6,9 +6,7 @@ import AdsBox from "./component/AdsBox"
 import PostList from "./component/PostList"
 import ContactBox from "./component/ContactBox"
 
-type Props = {}
-
-export default function HomeContent({}: Props) {
+export default function HomeContent() {
   return (
     <div className="">
       <BannerSlider />

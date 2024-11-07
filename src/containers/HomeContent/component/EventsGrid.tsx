@@ -8,21 +8,18 @@ import {
   EventImg7,
   EventImg9,
 } from "@/constants/event"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import React from "react"
 
-type Props = {}
-
-export default function EventsGrid({}: Props) {
+export default function EventsGrid() {
   return (
     <section className="container my-10">
       <div className="text-center">
         <div className="text-4xl font-semibold text-font ">Những sự kiện Rainbow Booth từng góp mặt</div>
         <p className="text-gray-500 mt-4 text-xl w-full lg:w-[40%] mx-auto">
-          {" "}
-          “It’s one thing to make a picture of what a person looks like, it’s another thing to make a potrait of who
-          they are.”
+          {`“It’s one thing to make a picture of what a person looks like, it’s another thing to make a potrait of who
+          they are.”`}
         </p>
         <p className="text-gray-500 mt-4 w-[50%] mx-auto text-gradient"> — Paul Caponigro</p>
       </div>
@@ -70,7 +67,7 @@ export default function EventsGrid({}: Props) {
   )
 }
 
-function EventItem({ img, title, desc }: { img: string | any; title: string; desc: string }) {
+function EventItem({ img, title, desc }: { img: string | StaticImageData; title: string; desc: string }) {
   return (
     <Link
       href={"https://www.facebook.com/RainbowBoothVN"}

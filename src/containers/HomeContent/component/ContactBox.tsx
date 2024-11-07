@@ -1,9 +1,7 @@
 import Link from "next/link"
 import React from "react"
 
-type Props = {}
-
-export default function ContactBox({}: Props) {
+export default function ContactBox() {
   return (
     <div className="py-24  bg-[#fef7f5]">
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start md:items-center gap-8 lg:gap-20">

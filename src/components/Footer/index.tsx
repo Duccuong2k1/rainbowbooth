@@ -5,9 +5,7 @@ import { RiInstagramFill } from "react-icons/ri"
 import LogoDefault from "@/public/assets/imgs/logo-rainbow.png"
 import Image from "next/image"
 
-type Props = {}
-
-export default function Footer({}: Props) {
+export default function Footer() {
   return (
     <footer className="bg-[#151515] py-10">
       <section className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-24">

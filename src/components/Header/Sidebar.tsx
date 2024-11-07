@@ -2,8 +2,7 @@ import Link from "next/link"
 
 import React from "react"
 
-import { TfiLayoutGrid2 } from "react-icons/tfi"
-import { SildeOutProps, SlideOut } from "../SlideOut"
+import { SlideOut } from "../SlideOut"
 import { MENU_MAIN } from "@/constants/default"
 import { RowItemLabel } from "./HeaderTopBar"
 import { LuClock5, LuMapPin } from "react-icons/lu"
@@ -11,9 +10,12 @@ import { MdOutlineEmail, MdOutlineLocalPhone } from "react-icons/md"
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa"
 import { RiInstagramFill } from "react-icons/ri"
 import { useRouter } from "next/navigation"
-interface SidebarProps extends SildeOutProps {}
+interface SidebarProps {
+  isOpen: boolean
+  onClose: () => void
+}
 
-export function Sidebar({ ...props }: SidebarProps) {
+export function Sidebar(props: SidebarProps) {
   const router = useRouter()
   const handleClick = (href: string) => {
     router.push(href)

@@ -1,10 +1,10 @@
-import React, { Children, MouseEventHandler, useEffect, useRef, useState } from "react"
+import React, { MouseEventHandler, useEffect, useRef, useState } from "react"
 import { IoClose } from "react-icons/io5"
 import { forceCheck } from "react-lazyload"
 
 export interface SildeOutProps {
   isOpen?: boolean
-  onClose?: () => any
+  onClose?: () => void
   onClick?: MouseEventHandler<HTMLDivElement>
   onOverlayClick?: MouseEventHandler<HTMLDivElement>
   children?: React.ReactNode
@@ -14,7 +14,7 @@ export interface SildeOutProps {
   bodyClassName?: string
   maxWidth?: number | string
   height?: number | string
-  className?: string | any
+  className?: string
 }
 
 export function SlideOut({ className = "w-1/3", children, ...props }: SildeOutProps) {
@@ -22,11 +22,13 @@ export function SlideOut({ className = "w-1/3", children, ...props }: SildeOutPr
   const wrapperRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    let timeout: any
+    let timeout: ReturnType<typeof setTimeout>
     if (props.isOpen) {
       setIsOpen(props.isOpen)
       document.body.style.overflow = "hidden"
-      setTimeout(() => forceCheck(), 100)
+      timeout = setTimeout(() => {
+        forceCheck()
+      }, 100)
     } else {
       document.body.style.overflow = "auto"
       timeout = setTimeout(() => {
@@ -38,7 +40,6 @@ export function SlideOut({ className = "w-1/3", children, ...props }: SildeOutPr
       document.body.style.overflow = "auto"
     }
   }, [props.isOpen])
-
   const handleOverlayClick = (event: React.MouseEvent<HTMLDivElement>) => {
     if (event.target === wrapperRef.current) {
       if (props.onOverlayClick) {

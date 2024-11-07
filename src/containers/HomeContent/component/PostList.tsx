@@ -1,11 +1,9 @@
 import { BlogImg1, BlogImg2, BlogImg3 } from "@/constants/event"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import React from "react"
 
-type Props = {}
-
-export default function PostList({}: Props) {
+export default function PostList() {
   return (
     <div className="container my-10">
       <div className="text-center">
@@ -37,7 +35,7 @@ export default function PostList({}: Props) {
   )
 }
 
-function BlogItem({ img, title, desc }: { img: string | any; title: string; desc?: string }) {
+function BlogItem({ img, title, desc }: { img: string | StaticImageData; title: string; desc?: string }) {
   return (
     <Link href={"https://www.facebook.com/RainbowBoothVN"} data-aos="zoom-in-up">
       <Image src={img} height={80} width={500} alt={title} className="hover:scale-105 rounded-md transition-all" />

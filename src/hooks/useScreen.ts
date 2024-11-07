@@ -6,7 +6,7 @@ type BreakPoint = "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 export function useScreen(breakpoint: BreakPoint) {
   function isBreakPoint(): boolean {
     if (typeof window !== "undefined") {
-      let width = window.innerWidth;
+      const width = window.innerWidth;
       switch (breakpoint) {
         case "xxl": {
           return width >= 1214;

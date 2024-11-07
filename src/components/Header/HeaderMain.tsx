@@ -10,9 +10,7 @@ import { useScreen } from "@/hooks/useScreen"
 import { HiOutlineMenuAlt3 } from "react-icons/hi"
 import { Sidebar } from "./Sidebar"
 
-type Props = {}
-
-export default function HeaderMain({}: Props) {
+export default function HeaderMain() {
   const isLg = useScreen("lg")
   if (!isLg) return <HeaderMobile />
   return (

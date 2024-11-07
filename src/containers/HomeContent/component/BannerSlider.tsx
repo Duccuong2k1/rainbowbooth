@@ -8,8 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Autoplay } from "swiper/modules"
 import Image from "next/image"
 
-type Props = {}
-export default function BannerSlider({}: Props) {
+export default function BannerSlider() {
   return (
     <>
       <Swiper

@@ -2,9 +2,7 @@ import React from "react"
 import ImageEvent1 from "@/public/assets/imgs/image-event-1.jpg"
 import Image from "next/image"
 
-type Props = {}
-
-export default function DreamBoxSection({}: Props) {
+export default function DreamBoxSection() {
   return (
     <section className="container my-10 grid grid-cols-2 gap-8 items-center">
       <div>
@@ -19,7 +17,7 @@ export default function DreamBoxSection({}: Props) {
       </div>
       <div className="">
         <p className="text-[90px] font-semibold leading-[110px] flex flex-col items-start">
-          <span>"Where</span> <span>dreams</span> <span>come true"</span>
+          <span>{`"Where`}</span> <span>dreams</span> <span>come {`true"`}</span>
         </p>
         <p className=" mt-6 text-lg font-semibold text-gradient">Rainbow Booth</p>
       </div>

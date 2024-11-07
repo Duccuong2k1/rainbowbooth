@@ -1,13 +1,10 @@
 "use client"
 import React from "react"
-import HeaderTopBar from "./HeaderTopBar"
 import HeaderMain from "./HeaderMain"
 import { useScroll } from "@/hooks/useScroll"
 import { cn } from "@/lib/utils"
 
-type Props = {}
-
-export default function Header({}: Props) {
+export default function Header() {
   const isScrolled = useScroll()
   return (
     <section
