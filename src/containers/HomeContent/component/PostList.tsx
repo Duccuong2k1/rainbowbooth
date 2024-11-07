@@ -10,13 +10,13 @@ export default function PostList({}: Props) {
     <div className="container my-10">
       <div className="text-center">
         <div className="text-4xl font-semibold text-font">Read Our Blog</div>
-        <p className="text-gray-500 mt-4 w-[50%] mx-auto">
+        <p className="text-gray-500 mt-4 w-full lg:w-[50%] mx-auto">
           {" "}
           We love photography and travel for meeting new beautiful people all over the world.
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-12 items-start py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 items-start py-10">
         <BlogItem
           img={BlogImg1}
           title="Cười thả ga ảnh đậm chất"

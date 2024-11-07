@@ -19,7 +19,7 @@ export default function EventsGrid({}: Props) {
     <section className="container my-10">
       <div className="text-center">
         <div className="text-4xl font-semibold text-font ">Những sự kiện Rainbow Booth từng góp mặt</div>
-        <p className="text-gray-500 mt-4 text-xl w-[40%] mx-auto">
+        <p className="text-gray-500 mt-4 text-xl w-full lg:w-[40%] mx-auto">
           {" "}
           “It’s one thing to make a picture of what a person looks like, it’s another thing to make a potrait of who
           they are.”
@@ -27,7 +27,7 @@ export default function EventsGrid({}: Props) {
         <p className="text-gray-500 mt-4 w-[50%] mx-auto text-gradient"> — Paul Caponigro</p>
       </div>
 
-      <div className="grid grid-cols-4 gap-8 items-center py-20">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center py-20">
         <div className="grid grid-rows-3 gap-10">
           <div className="row-span-1">
             <EventItem img={EventImg4} title="My Duc wedding" desc="Jun,27, 2024" />

@@ -10,7 +10,7 @@ type Props = {}
 export default function Footer({}: Props) {
   return (
     <footer className="bg-[#151515] py-10">
-      <section className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24">
+      <section className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-24">
         <div className="">
           <Link href={"/"} className="flex flex-col  mb-6 ">
             {/* <div className="font-semibold text-6xl">RB</div>
