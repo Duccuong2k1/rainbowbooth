@@ -1,11 +1,10 @@
 "use client"
 import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay, Grid } from "swiper/modules"
+import { Pagination, Autoplay } from "swiper/modules"
 import Image from "next/image"
 import {
   BnrImg2,
-  BnrImg5,
   EventImg4,
   EventImg5,
   EventImg6,
