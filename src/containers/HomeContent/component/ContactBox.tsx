@@ -10,7 +10,7 @@ export default function ContactBox() {
           <p className="my-4 text-2xl text-gray-500"> Colour Your Moments Make your party memorable and fun</p>
         </div>
         <Link
-          href={"https://docs.google.com/forms/d/1T1C4nKhGU0n3lxTXSGYzxrEEpJdCfcPOUeehwFMTyIg/prefill"}
+          href={"https://docs.google.com/forms/d/1T1C4nKhGU0n3lxTXSGYzxrEEpJdCfcPOUeehwFMTyIg"}
           className="mx-auto inline-block px-4 py-3 h-[50px] lg:text-center rounded-full bg-black text-white font-semibold hover:shadow-md hover:text-orange-500"
           data-aos="zoom-in-up"
           target="_blank"
