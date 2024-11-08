@@ -1,5 +1,5 @@
-import HomeContent from "@/containers/HomeContent"
+import HomeContentV2 from "@/containers/HomeContentV2"
 
 export default function Home() {
-  return <HomeContent />
+  return <HomeContentV2 />
 }

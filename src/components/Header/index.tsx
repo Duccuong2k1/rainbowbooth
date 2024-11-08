@@ -6,11 +6,12 @@ import { cn } from "@/lib/utils"
 
 export default function Header() {
   const isScrolled = useScroll()
+  if (isScrolled) return <></>
   return (
     <section
       className={cn(
-        `fixed w-full top-0 left-0 z-50 transition-colors duration-300`,
-        isScrolled ? "bg-white shadow-md text-black " : "bg-transparent text-white",
+        `fixed w-full top-0 left-0 z-50 transition-colors duration-300 text-white bg-transparent`,
+        isScrolled ? "shadow-md text-[#1a1a1a] " : "bg-transparent ",
       )}
     >
       {/* <HeaderTopBar /> */}

@@ -1,5 +1,5 @@
 import React from "react"
-import ImageEvent1 from "@/public/assets/imgs/image-event-1.jpg"
+import ImageEvent1 from "@/public/image/image-event-1.jpg"
 import Image from "next/image"
 
 export default function DreamBoxSection() {

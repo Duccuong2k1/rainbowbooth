@@ -1,7 +1,7 @@
 import React from "react"
-import ImgFeature1 from "@/public/assets/imgs/img-1.jpg"
-import ImgFeature2 from "@/public/assets/imgs/img-2.jpg"
-import ImgFeature3 from "@/public/assets/imgs/img-3.jpg"
+import ImgFeature1 from "@/public/image/img-1.jpg"
+import ImgFeature2 from "@/public/image/img-2.jpg"
+import ImgFeature3 from "@/public/image/img-3.jpg"
 
 import { FeatureItem } from "@/components/FeatureItem"
 

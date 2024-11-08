@@ -14,11 +14,7 @@ export const MENU_MAIN = [
         label: "Sự kiện",
         href: "https://www.facebook.com/RainbowBoothVN",
     },
-    {
-        value: "contact",
-        label: "Liên hệ",
-        href: "https://www.facebook.com/RainbowBoothVN",
-    },
+
 ]
 
 

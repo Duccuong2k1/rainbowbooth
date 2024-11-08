@@ -2,12 +2,12 @@ import Link from "next/link"
 import React from "react"
 import { FaCheck, FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa"
 import { RiInstagramFill } from "react-icons/ri"
-import LogoDefault from "@/public/assets/imgs/logo-rainbow.png"
+import LogoDefault from "@/public/image/logo-rainbow.png"
 import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#151515] py-10">
+    <footer className=" py-10">
       <section className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-24">
         <div className="">
           <Link href={"/"} className="flex flex-col  mb-6 ">
