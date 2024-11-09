@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://rainbowbooth.vercel.app/",
+        url: "https://i.imgur.com/QjY9Qjy.png",
         width: 1200,
         height: 630,
         alt: "Rainbowbooth - Dịch vụ photo booth độc đáo",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Rainbowbooth - Dịch vụ photo booth độc đáo",
     description:
       "Rainbowbooth cung cấp dịch vụ photo booth độc đáo và phong cách để làm cho sự kiện của bạn trở nên khó quên",
-    images: ["https://rainbowbooth.vercel.app/"],
+    images: ["https://i.imgur.com/QjY9Qjy.png"],
   },
   viewport: "width=device-width, initial-scale=1",
 }

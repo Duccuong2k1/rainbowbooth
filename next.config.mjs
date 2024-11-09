@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["rainbowbooth.com.vn"], // Add the domain where your images are hosted
+    domains: ["rainbowbooth.com.vn", "i.imgur.com"], // Add the domain where your images are hosted
   },
 }
 
