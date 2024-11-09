@@ -37,7 +37,10 @@ export default function EventsParticipation() {
           />
         </div>
         <div>
-          <p className="text-[#a2ecdd] uppercase text-lg font-semibold">{`“It’s one thing to make a picture of what a person looks like, it’s another thing to make a potrait of who they are.”`}</p>
+          <p
+            data-aos="zoom-in"
+            className="text-[#a2ecdd] uppercase text-lg font-semibold"
+          >{`“It’s one thing to make a picture of what a person looks like, it’s another thing to make a potrait of who they are.”`}</p>
         </div>
       </div>
       <Swiper
@@ -82,7 +85,14 @@ export default function EventsParticipation() {
               />
             </div>
             <div className="grid  grid-cols-1 md:grid-cols-3 gap-3">
-              <Image src={Img1} width={500} height={300} alt="Chào mừng bạn đến với Rainbow Booth" loading="lazy" />
+              <Image
+                src={Img1}
+                width={500}
+                height={300}
+                alt="Chào mừng bạn đến với Rainbow Booth"
+                loading="lazy"
+                data-aos="zoom-in"
+              />
               <Image
                 src={EventImg8}
                 width={500}

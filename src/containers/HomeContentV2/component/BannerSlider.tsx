@@ -16,9 +16,12 @@ import { useScreen } from "@/hooks/useScreen"
 
 export default function BannerSlider() {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 items-center  ">
-      <div className="background min-h-screen flex flex-col items-center justify-center lg:pl-[4rem] px-4  lg:px-20">
-        <h1 className="text-center lg:leading-[120px] text-[50px] text-border font-semibold px-4 " data-aos="zoom-in">
+    <section className="grid grid-cols-1 lg:grid-cols-2 items-center">
+      <div className="background min-h-screen flex flex-col items-center justify-center lg:pl-[4rem] px-4  lg:px-20 ">
+        <h1
+          className="text-center lg:leading-[120px] text-[50px] text-border font-semibold px-4 text-nowrap "
+          data-aos="zoom-in"
+        >
           Photo booth
         </h1>
         <div className="text-[30px] text-white font-semibold px-4 text-center my-6 uppercase" data-aos="zoom-in">
@@ -45,7 +48,7 @@ export default function BannerSlider() {
         </div>
       </div>
 
-      <div className="  ">
+      <div className="">
         <BannerBoxRightSlide />
       </div>
     </section>
@@ -79,6 +82,7 @@ function BannerBoxRightSlide() {
               height={500}
               alt="Chào mừng bạn đến với Rainbow Booth"
               data-aos="zoom-in"
+              // className="max-w-[800px]"
               // loading="lazy"
             />
             <div className="flex gap-2 flex-row items-center justify-end my-4 flex-wrap">

@@ -15,10 +15,8 @@ export default function HeaderMain() {
   if (!isLg) return <HeaderMobile />
   return (
     <section className="container flex flex-row  justify-between items-center gap-8">
-      <Link href={"/"} className="flex flex-col items-center">
+      <Link href={"/"} className="flex flex-col items-center ">
         <Image src={LogoDefault} width={100} height={60} alt="Logo rainbow booth" />
-        {/* <div className="font-semibold text-6xl">RB</div>
-        <div>Rainbow Booth</div> */}
       </Link>
 
       <div className="flex-row hidden lg:flex items-center justify-start gap-6">
