@@ -17,6 +17,7 @@ export default function TitleWrapper({ bgColor, textColor, label, className }: P
         textColor,
         className,
       )}
+      data-aos="zoom-in"
     >
       {label}
     </h3>

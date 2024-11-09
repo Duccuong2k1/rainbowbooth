@@ -21,15 +21,20 @@ import TitleWrapper from "@/components/TitleWrapper"
 export default function EventsParticipation() {
   return (
     <section className="h-full py-20 container">
-      <div className="grid grid-cols-2 gap-10 items-end py-6 mb-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-end py-6 mb-6">
         <div className="flex flex-col gap-1">
           <TitleWrapper
             bgColor={"bg-[#8b0688]"}
             textColor="text-gradient"
             label="Rainbow Booth"
-            className="w-1/3 text-lg"
+            className="lg:w-1/3 w-full text-lg"
           />
-          <TitleWrapper bgColor={"bg-[#8b0688]"} textColor="text-white" label="Events đã góp mặt" className="w-1/2" />
+          <TitleWrapper
+            bgColor={"bg-[#8b0688]"}
+            textColor="text-white"
+            label="Events đã góp mặt"
+            className="md:w-1/2 w-full"
+          />
         </div>
         <div>
           <p className="text-[#a2ecdd] uppercase text-lg font-semibold">{`“It’s one thing to make a picture of what a person looks like, it’s another thing to make a potrait of who they are.”`}</p>
@@ -50,100 +55,105 @@ export default function EventsParticipation() {
       >
         <SwiperSlide>
           <div className="grid grid-row-2 gap-3">
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               <Image
                 src={EventImg4}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
               <Image
                 src={EventImg5}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
               <Image
                 src={EventImg6}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
             </div>
-            <div className="grid grid-cols-3 gap-3">
-              <Image
-                src={Img1}
-                width={500}
-                height={300}
-                alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
-              />
+            <div className="grid  grid-cols-1 md:grid-cols-3 gap-3">
+              <Image src={Img1} width={500} height={300} alt="Chào mừng bạn đến với Rainbow Booth" loading="lazy" />
               <Image
                 src={EventImg8}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
               <Image
                 src={Img2}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="grid grid-row-2 gap-3">
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               <Image
                 src={Img7}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
               <Image
                 src={Img1}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
               <Image
                 src={Img3}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
             </div>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               <Image
                 src={BnrImg2}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
               <Image
                 src={Img5}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
               <Image
                 src={Img6}
                 width={500}
                 height={300}
                 alt="Chào mừng bạn đến với Rainbow Booth"
-                // loading="lazy"
+                loading="lazy"
+                data-aos="zoom-in"
               />
             </div>
           </div>

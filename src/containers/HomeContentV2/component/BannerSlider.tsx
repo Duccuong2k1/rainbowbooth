@@ -12,21 +12,24 @@ import Image from "next/image"
 import { BnrImg1, BnrImg2 } from "@/constants/event"
 
 import HastTag from "@/components/HastTag"
+import { useScreen } from "@/hooks/useScreen"
 
 export default function BannerSlider() {
   return (
-    <section className="grid grid-cols-2 items-center  ">
-      <div className="background min-h-screen flex flex-col items-center justify-center pl-[4rem]  px-20">
-        <h1 className="text-[50px] text-border font-semibold px-4 shadow-lg">Photo booth</h1>
-        <div className="text-[30px] text-white font-semibold px-4 text-center my-6 uppercase">
+    <section className="grid grid-cols-1 lg:grid-cols-2 items-center  ">
+      <div className="background min-h-screen flex flex-col items-center justify-center lg:pl-[4rem] px-4  lg:px-20">
+        <h1 className="text-center lg:leading-[120px] text-[50px] text-border font-semibold px-4 " data-aos="zoom-in">
+          Photo booth
+        </h1>
+        <div className="text-[30px] text-white font-semibold px-4 text-center my-6 uppercase" data-aos="zoom-in">
           classic. instant prints.
         </div>
-        <p className="lg:text-lg text-md text-white text-center w-[80%]" data-aos="zoom-in-down">
+        <p className="lg:text-lg text-md text-white text-center w-full lg:w-[80%]" data-aos="zoom-in-down">
           Dịch vụ photo booth độc đáo mang đến cho bạn trải nghiệm chụp ảnh lấy liền sôi động và đầy màu sắc. Với thiết
           kế độc đáo, được làm từ gỗ tự nhiên kết hợp với công nghệ hiện đại, chúng tôi cam kết sẽ cho ra những tấm ảnh
           hết sức vui nhộn và đáng nhớ dành cho bạn!
         </p>
-        <div className="flex  flex-row items-start justify-start gap-3 text-white mt-24">
+        <div className="flex  flex-row items-start justify-start gap-3 text-white mt-8 lg:mt-24" data-aos="zoom-in">
           <Link href={"/"} className="text-xl text-red-500 bg-white p-3">
             <FaYoutube />
           </Link>
@@ -50,6 +53,8 @@ export default function BannerSlider() {
 }
 
 function BannerBoxRightSlide() {
+  const isLg = useScreen("lg")
+
   return (
     <Swiper
       pagination={{
@@ -65,7 +70,7 @@ function BannerBoxRightSlide() {
       className="mySwiper"
     >
       <SwiperSlide className="">
-        <div className="bg-[#1a1a1a] min-h-screen px-[4rem] flex flex-row items-center justify-center">
+        <div className="bg-[#1a1a1a] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
           <div className="relative">
             <HastTag bgColor={"bg-[#d31f7e]"} textColor="text-white" label="Pro booth" />
             <Image
@@ -76,7 +81,7 @@ function BannerBoxRightSlide() {
               data-aos="zoom-in"
               // loading="lazy"
             />
-            <div className="flex gap-2 flex-row items-center justify-end my-4">
+            <div className="flex gap-2 flex-row items-center justify-end my-4 flex-wrap">
               <span className="text-gradient font-semibold ">Pro Booth</span>{" "}
               <span className="text-white">Our most versatile Photo Booth</span>
             </div>
@@ -84,7 +89,7 @@ function BannerBoxRightSlide() {
         </div>
       </SwiperSlide>
       <SwiperSlide className="">
-        <div className="bg-[#f6ff54] min-h-screen px-[4rem] flex flex-row items-center justify-center">
+        <div className="bg-[#f6ff54] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
           <div className="relative">
             <HastTag bgColor={"bg-black"} textColor=" text-[#f6ff54] " label="  Origin Booth" />
             <Image
@@ -95,7 +100,7 @@ function BannerBoxRightSlide() {
               data-aos="zoom-in"
               // loading="lazy"
             />
-            <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a]">
+            <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
               <span className=" font-semibold ">Origin Booth</span>{" "}
               <span className="">Our most versatile Photo Booth</span>
             </div>
@@ -103,18 +108,21 @@ function BannerBoxRightSlide() {
         </div>
       </SwiperSlide>
       <SwiperSlide className="">
-        <div className="bg-[#e14a2c] min-h-screen px-[4rem] flex flex-row items-center justify-center">
+        <div className="bg-[#e14a2c] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
           <div className="relative">
             <HastTag bgColor={"bg-[#f6ff54]"} textColor=" text-black " label="360 Coming soon!" />
             <iframe
-              width="560"
+              width={isLg ? "560" : "340"}
               height="315"
               src="https://www.youtube.com/embed/oCD0AAUEa2A?si=wKhTiRiNBi6nKYzh"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
-            <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a]">
-              <span className=" font-semibold ">360 with rainbow</span>{" "}
+            <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
+              <span className=" font-semibold text-white">
+                360 with
+                <span className="text-gradient"> Rainbow</span>
+              </span>{" "}
               <span className="">Our most versatile Photo Booth</span>
             </div>
           </div>

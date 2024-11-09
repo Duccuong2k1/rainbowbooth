@@ -19,6 +19,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        csYellow: "#f6ff54",
+        csText: "#ececec",
+        csPink: "#d73985",
+        csBlack: "#1a1a1a",
       },
     },
   },

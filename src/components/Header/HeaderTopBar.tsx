@@ -21,7 +21,7 @@ export default function HeaderTopBar() {
 
 export function RowItemLabel({ icon, label }: { icon: React.ReactNode; label: string }) {
   return (
-    <div className="flex flex-row items-center justify-start gap-2 text-black">
+    <div className="flex flex-row items-center justify-start gap-2 text-white">
       {icon}
       <span className="text-sm">{label}</span>
     </div>

@@ -2,13 +2,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import React, { useState } from "react"
-import { FaFacebookF } from "react-icons/fa"
-import { RiInstagramFill } from "react-icons/ri"
 import LogoDefault from "@/public/image/logo-rainbow.png"
 import { MENU_MAIN } from "@/constants/default"
 import { useScreen } from "@/hooks/useScreen"
 import { HiOutlineMenuAlt3 } from "react-icons/hi"
 import { Sidebar } from "./Sidebar"
+import { usePathname } from "next/navigation"
+import { cn } from "@/lib/utils"
 
 export default function HeaderMain() {
   const isLg = useScreen("lg")
@@ -66,15 +66,9 @@ function HeaderMobile() {
         </Link>
         <div>
           <div className="flex flex-row items-center justify-end gap-3">
-            <button className="text-2xl " onClick={() => setIsOpenSidebar(true)}>
+            <button className="text-4xl " onClick={() => setIsOpenSidebar(true)}>
               <HiOutlineMenuAlt3 />
             </button>
-            <Link href={"https://www.facebook.com/RainbowBoothVN"} className="text-xl  hover:text-blue-500">
-              <FaFacebookF />
-            </Link>
-            <Link href={"https://www.instagram.com/event.rainbowbooth/"} className="text-xl  hover:text-orange-500">
-              <RiInstagramFill />
-            </Link>
           </div>
         </div>
       </section>
@@ -84,8 +78,15 @@ function HeaderMobile() {
 }
 
 function MenuItem({ label, href }: { label: string; href: string }) {
+  const pathName = usePathname()
   return (
-    <Link href={href || "/"} className="font-normal text-md hover:text-yellow-400 text-nowrap">
+    <Link
+      href={href || "/"}
+      className={cn(
+        "font-normal text-md hover:text-yellow-400 text-nowrap px-2 py-1",
+        pathName === href && "border-b border-white",
+      )}
+    >
       {label}
     </Link>
   )

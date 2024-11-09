@@ -161,7 +161,19 @@ body {
   font-family: "Bebas Neue", sans-serif;
   /* font-size: 86.7616px; */
   letter-spacing: 15px;
-  line-height: 102.518px;
-  margin: 0px 0px 31.68px;
   text-transform: uppercase;
+}
+
+.btn-back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  padding: 10px 15px;
+  background-color: #f6ff54;
+  color: #000;
+  border: none;
+
+  cursor: pointer;
+  z-index: 1000;
+  /* opacity: 0.8; */
 }

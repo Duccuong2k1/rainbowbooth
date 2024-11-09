@@ -2,6 +2,7 @@
 import HastTag from "@/components/HastTag"
 import { BnrImg3, BnrImg4, BnrImg5, EventImg9 } from "@/constants/event"
 import Image from "next/image"
+import Link from "next/link"
 import React, { useState } from "react"
 import { FaCamera } from "react-icons/fa"
 
@@ -18,7 +19,7 @@ const PhotoBoothBackground = () => {
   // }, [])
 
   return (
-    <div className="min-h-screen relative overflow-hidden pb-20">
+    <div className="lg:min-h-screen h-full relative overflow-hidden pb-20">
       <div
         className="absolute inset-0 bg-gradient-to-br from-pink-400 via-purple-500 via-blue-500 via-green-400 via-yellow-400 via-orange-500 to-red-500 animate-gradient"
         style={{
@@ -49,7 +50,9 @@ const PhotoBoothBackground = () => {
 
       <div className="relative z-10 h-full py-20 flex items-center justify-center px-4">
         <div className="text-center">
-          <h1 className="text-6xl font-bold text-white mb-6 tracking-wider shadow-text">Where dreams come true</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-wider shadow-text">
+            Where dreams come true
+          </h1>
           <p className="text-xl text-white opacity-90 max-w-2xl mx-auto leading-relaxed shadow-text">
             Step into our magical photo booth and create memories that will last forever. Experience the perfect blend
             of fun and photography.
@@ -59,19 +62,27 @@ const PhotoBoothBackground = () => {
           </button> */}
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-1 relative z-10 h-full container">
-        <div className="relative border-4 border-white" data-aos="zoom-in">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-1 relative z-10 h-full container">
+        <Link
+          href={"https://www.facebook.com/RainbowBoothVN"}
+          className="relative border-4 border-white"
+          data-aos="zoom-in"
+        >
           <HastTag bgColor={"bg-[#00bbdc]"} textColor="text-white" label="Rainbow booth" />{" "}
           <Image
             src={BnrImg5}
             width={500}
             height={300}
             alt="Chào mừng bạn đến với Rainbow Booth"
-            // loading="lazy"
+            loading="lazy"
             className="max-h-[500px]"
           />
-        </div>
-        <div className="relative border-4 border-white" data-aos="zoom-in">
+        </Link>
+        <Link
+          href={"https://www.facebook.com/RainbowBoothVN"}
+          className="relative border-4 border-white"
+          data-aos="zoom-in"
+        >
           <HastTag bgColor={"bg-[#e14a2c]"} textColor="text-white" label="Rainbow at Fpt" />{" "}
           <Image
             src={EventImg9}
@@ -79,10 +90,14 @@ const PhotoBoothBackground = () => {
             height={300}
             alt="Chào mừng bạn đến với Rainbow Booth"
             className="max-h-[500px]"
-            // loading="lazy"
+            loading="lazy"
           />
-        </div>
-        <div className="relative border-4 border-white" data-aos="zoom-in">
+        </Link>
+        <Link
+          href={"https://www.facebook.com/RainbowBoothVN"}
+          className="relative border-4 border-white"
+          data-aos="zoom-in"
+        >
           <HastTag bgColor={"bg-black"} textColor="text-[#feff63]" label="Pro booth" />{" "}
           <Image
             src={BnrImg3}
@@ -90,9 +105,9 @@ const PhotoBoothBackground = () => {
             height={300}
             alt="Chào mừng bạn đến với Rainbow Booth"
             className="max-h-[500px]"
-            // loading="lazy"
+            loading="lazy"
           />
-        </div>
+        </Link>
       </div>
 
       <style jsx>{`
