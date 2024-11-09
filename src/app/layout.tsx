@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     title: "Rainbowbooth - Dịch vụ photo booth độc đáo",
     description:
       "Rainbowbooth cung cấp dịch vụ photo booth độc đáo và phong cách để làm cho sự kiện của bạn trở nên khó quên",
-    url: "https://rainbowbooth.com.vn",
+    url: "https://rainbowbooth.vercel.app/",
     type: "website",
     images: [
       {
-        url: "https://www.rainbowbooth.com/og-image.jpg",
+        url: "https://rainbowbooth.vercel.app/",
         width: 1200,
         height: 630,
         alt: "Rainbowbooth - Dịch vụ photo booth độc đáo",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Rainbowbooth - Dịch vụ photo booth độc đáo",
     description:
       "Rainbowbooth cung cấp dịch vụ photo booth độc đáo và phong cách để làm cho sự kiện của bạn trở nên khó quên",
-    images: ["https://www.rainbowbooth.com/twitter-image.jpg"],
+    images: ["https://rainbowbooth.vercel.app/"],
   },
   viewport: "width=device-width, initial-scale=1",
 }
