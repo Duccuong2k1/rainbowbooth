@@ -31,9 +31,19 @@ body {
 
 /* Define the background with color gradient and animation */
 .background {
-  background: linear-gradient(45deg, #ff00ff, #ff8800, #00ffdd, #0000ff);
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
+  background: linear-gradient(45deg, #ff00ff, #ff8800, #00ffdd, #0000ff, #4b0082);
+  /* background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite; */
+  /* background: linear-gradient(
+    90deg,
+    #ff0000 0%,
+    #ff7f00 16%,
+    #ffff00 33%,
+    #00ff00 50%,
+    #0000ff 66%,
+    #4b0082 83%,
+    #8b00ff 100%
+  ); */
 }
 
 /* Define the animation keyframes for smooth color transitions */
