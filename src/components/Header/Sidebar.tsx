@@ -1,6 +1,7 @@
+"use client"
 import Link from "next/link"
 
-import React from "react"
+import React, { useCallback } from "react"
 
 import { SlideOut } from "../SlideOut"
 import { MENU_MAIN } from "@/constants/default"
@@ -22,6 +23,13 @@ export function Sidebar(props: SidebarProps) {
     router.push(href)
     props.onClose?.()
   }
+
+  const handleContactBtn = useCallback(() => {
+    if (pathName !== "/") {
+      router.push("/#contact")
+    }
+    router.push("/#contact")
+  }, [pathName])
   return (
     <SlideOut
       isOpen={props.isOpen}
@@ -50,10 +58,10 @@ export function Sidebar(props: SidebarProps) {
                 </span>
               </div>
             ))}
-            <button className="cs-btn">
-              <Link href={"#contact"} className="lg:text-center font-semibold  " data-aos="zoom-in-up">
+            <button className="cs-btn" onClick={handleContactBtn}>
+              <span className="lg:text-center font-semibold" data-aos="zoom-in-up">
                 Contact
-              </Link>
+              </span>
             </button>
             <div className="flex flex-row items-center justify-center mt-6 gap-3 text-white  w-full py-3">
               <Link href={"/"} className="text-xl  hover:text-red-500">

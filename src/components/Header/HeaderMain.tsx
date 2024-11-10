@@ -1,18 +1,27 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-import React, { useState } from "react"
+import React, { useCallback, useState } from "react"
 import LogoDefault from "@/public/image/logo-rainbow.png"
 import { MENU_MAIN } from "@/constants/default"
 import { useScreen } from "@/hooks/useScreen"
 import { HiOutlineMenuAlt3 } from "react-icons/hi"
 import { Sidebar } from "./Sidebar"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { cn } from "@/lib/utils"
 
 export default function HeaderMain() {
   const isLg = useScreen("lg")
+  const router = useRouter()
+  const pathName = usePathname()
+  const handleContactBtn = useCallback(() => {
+    if (pathName !== "/") {
+      router.push("/#contact")
+    }
+    router.push("/#contact")
+  }, [pathName])
   if (!isLg) return <HeaderMobile />
+
   return (
     <section className="container flex flex-row  justify-between items-center gap-8">
       <Link href={"/"} className="flex flex-col items-center ">
@@ -23,10 +32,10 @@ export default function HeaderMain() {
         {MENU_MAIN.map((menu, idx) => (
           <MenuItem label={menu.label} href={menu.href} key={idx} />
         ))}
-        <button className="cs-btn">
-          <Link href={"#contact"} className="lg:text-center font-semibold  " data-aos="zoom-in-up">
+        <button className="cs-btn" onClick={handleContactBtn}>
+          <span className="lg:text-center font-semibold" data-aos="zoom-in-up">
             Contact
-          </Link>
+          </span>
         </button>
       </div>
       {/* <div className="lg:flex hidden flex-row items-center justify-end gap-3">
