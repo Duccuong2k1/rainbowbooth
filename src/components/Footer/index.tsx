@@ -9,8 +9,8 @@ export default function Footer() {
     <footer className=" pb-10 pt-40 ">
       <div className="flex md:flex-row flex-col justify-between items-center gap-10 pb-5 container">
         <div className="flex flex-col items-center justify-center gap-4 text-center w-full lg:w-[30%] ">
-          <Link href={"/"} className="flex flex-col  mb-3 ">
-            <Image src={LogoDefault} width={150} height={60} alt="Logo rainbow booth" />
+          <Link href={"/"} className="flex flex-col ">
+            <Image src={LogoDefault} width={180} height={80} alt="Logo rainbow booth" />
           </Link>
           <div className="flex flex-row items-center justify-center gap-x-2 flex-wrap">
             <Link className="uppercase underline text-[#feff63] font-semibold leading-10 text-nowrap" href={"/"}>

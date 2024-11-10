@@ -51,12 +51,7 @@ export function Sidebar(props: SidebarProps) {
               </div>
             ))}
             <button className="cs-btn">
-              <Link
-                href={"https://docs.google.com/forms/d/1T1C4nKhGU0n3lxTXSGYzxrEEpJdCfcPOUeehwFMTyIg"}
-                className="lg:text-center font-semibold  "
-                data-aos="zoom-in-up"
-                target="_blank"
-              >
+              <Link href={"#contact"} className="lg:text-center font-semibold  " data-aos="zoom-in-up">
                 Contact
               </Link>
             </button>
