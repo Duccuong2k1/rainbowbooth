@@ -81,12 +81,12 @@ function BannerBoxRightSlide() {
 
       <SwiperSlide className="">
         <div className="bg-[#f2c40a] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
-          <div className="relative">
+          <div className="relative max-h-[400px] max-w-[400px]">
             <HastTag bgColor={"bg-black"} textColor="text-[#feff63]" label="Photo booth" />{" "}
             <Image
               src={BnrImg3}
-              width={500}
-              height={300}
+              width={400}
+              height={400}
               alt="Chào mừng bạn đến với Rainbow Booth"
               className="max-h-[400px] border-2 border-white"
               loading="lazy"
@@ -100,11 +100,11 @@ function BannerBoxRightSlide() {
       </SwiperSlide>
       <SwiperSlide className="">
         <div className="bg-[#e14a2c] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
-          <div className="relative">
+          <div className="relative  max-h-[400px] max-w-[400px]">
             <HastTag bgColor={"bg-[#f6ff54]"} textColor=" text-black " label="360 Coming soon!" />
             <iframe
-              width={isLg ? "560" : "340"}
-              height="315"
+              width={isLg ? "400" : "340"}
+              height={isLg ? "400" : "315"}
               src="https://www.youtube.com/embed/oCD0AAUEa2A?si=wKhTiRiNBi6nKYzh"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -122,12 +122,12 @@ function BannerBoxRightSlide() {
 
       <SwiperSlide className="">
         <div className="bg-[#aec581] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
-          <div className="relative">
+          <div className="relative  max-h-[400px] max-w-[400px]">
             <HastTag bgColor={"bg-[#00bbdc]"} textColor="text-white" label="Rainbow booth" />{" "}
             <Image
               src={BnrImg5}
-              width={500}
-              height={300}
+              width={400}
+              height={400}
               alt="Chào mừng bạn đến với Rainbow Booth"
               loading="lazy"
               className="max-h-[400px] border-2 border-white"
@@ -141,13 +141,13 @@ function BannerBoxRightSlide() {
       </SwiperSlide>
       <SwiperSlide className="">
         <div className="bg-[#2d90cf] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
-          <div className="relative">
+          <div className="relative  max-h-[400px] max-w-[400px]">
             <HastTag bgColor={"bg-[#d31f7e]"} textColor="text-white" label="Origin Booth" />
 
             <Image
               src={BnrImg2}
-              width={800}
-              height={500}
+              width={400}
+              height={400}
               alt="Chào mừng bạn đến với Rainbow Booth"
               data-aos="zoom-in"
               className="border-2 border-white"
