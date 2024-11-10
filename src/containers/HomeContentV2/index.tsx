@@ -1,18 +1,21 @@
 import React from "react"
 import BannerSlider from "./component/BannerSlider"
-import PhotoBoothBackground from "./component/PhotoBoothBackground"
 import EventsParticipation from "./component/EventsParticipation"
 import WhyNotBox from "./component/WhyNotBox"
-import BackToTop from "@/components/BackToTopBtn"
+import ContactUsBox from "./component/ContactUsBox"
+import AutoScrollImages from "@/components/AutoScrollImage"
 
 export default function HomeContentV2() {
   return (
     <div>
       <BannerSlider />
-      <PhotoBoothBackground />
+      {/* <PhotoBoothBackground /> */}
       <EventsParticipation />
+      <AutoScrollImages />
       <WhyNotBox />
-      <BackToTop />
+      <ContactUsBox />
+
+      {/* <BackToTop /> */}
     </div>
   )
 }

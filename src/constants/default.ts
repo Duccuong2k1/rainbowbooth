@@ -5,9 +5,9 @@ export const MENU_MAIN = [
         href: "/",
     },
     {
-        value: "blog",
+        value: "about",
         label: "Giới thiệu",
-        href: "https://www.facebook.com/RainbowBoothVN",
+        href: "/about",
     },
     {
         value: "evens",

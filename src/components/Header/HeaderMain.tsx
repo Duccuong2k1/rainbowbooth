@@ -16,7 +16,7 @@ export default function HeaderMain() {
   return (
     <section className="container flex flex-row  justify-between items-center gap-8">
       <Link href={"/"} className="flex flex-col items-center ">
-        <Image src={LogoDefault} width={100} height={60} alt="Logo rainbow booth" />
+        <Image src={LogoDefault} width={130} height={80} alt="Logo rainbow booth" />
       </Link>
 
       <div className="flex-row hidden lg:flex items-center justify-start gap-6">
@@ -24,12 +24,7 @@ export default function HeaderMain() {
           <MenuItem label={menu.label} href={menu.href} key={idx} />
         ))}
         <button className="cs-btn">
-          <Link
-            href={"https://docs.google.com/forms/d/1T1C4nKhGU0n3lxTXSGYzxrEEpJdCfcPOUeehwFMTyIg"}
-            className="lg:text-center font-semibold  "
-            data-aos="zoom-in-up"
-            target="_blank"
-          >
+          <Link href={"#contact"} className="lg:text-center font-semibold  " data-aos="zoom-in-up">
             Contact
           </Link>
         </button>

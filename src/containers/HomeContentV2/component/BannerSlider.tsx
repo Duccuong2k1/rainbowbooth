@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Autoplay } from "swiper/modules"
 
 import Image from "next/image"
-import { BnrImg1, BnrImg2 } from "@/constants/event"
+import { BnrImg1, BnrImg2, BnrImg3, BnrImg5 } from "@/constants/event"
 
 import HastTag from "@/components/HastTag"
 import { useScreen } from "@/hooks/useScreen"
@@ -19,7 +19,7 @@ export default function BannerSlider() {
     <section className="grid grid-cols-1 lg:grid-cols-2 items-center">
       <div className="background min-h-screen flex flex-col items-center justify-center lg:pl-[4rem] px-4  lg:px-20 ">
         <h1
-          className="text-center lg:leading-[120px] text-[50px] text-border font-semibold px-4 text-nowrap "
+          className="text-center lg:leading-[120px] text-[50px] text-border font-semibold px-4 lg:text-nowrap "
           data-aos="zoom-in"
         >
           Photo booth
@@ -32,20 +32,6 @@ export default function BannerSlider() {
           kế độc đáo, được làm từ gỗ tự nhiên kết hợp với công nghệ hiện đại, chúng tôi cam kết sẽ cho ra những tấm ảnh
           hết sức vui nhộn và đáng nhớ dành cho bạn!
         </p>
-        <div className="flex  flex-row items-start justify-start gap-3 text-white mt-8 lg:mt-24" data-aos="zoom-in">
-          <Link href={"/"} className="text-xl text-red-500 bg-white p-3">
-            <FaYoutube />
-          </Link>
-          <Link href={"https://www.facebook.com/RainbowBoothVN"} className="text-xl bg-white p-3  text-blue-500">
-            <FaFacebookF />
-          </Link>
-          <Link href={"https://www.instagram.com/event.rainbowbooth/"} className="text-xl bg-white p-3  text-pink-700">
-            <RiInstagramFill />
-          </Link>
-          <Link href={"/"} className="text-xl bg-white p-3 text-blue-500">
-            <FaTwitter />
-          </Link>
-        </div>
       </div>
 
       <div className="">
@@ -72,7 +58,7 @@ function BannerBoxRightSlide() {
       modules={[Pagination, Autoplay]}
       className="mySwiper"
     >
-      <SwiperSlide className="">
+      {/* <SwiperSlide className="">
         <div className="bg-[#1a1a1a] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
           <div className="relative">
             <HastTag bgColor={"bg-[#d31f7e]"} textColor="text-white" label="Pro booth" />
@@ -91,18 +77,19 @@ function BannerBoxRightSlide() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </SwiperSlide> */}
+
       <SwiperSlide className="">
-        <div className="bg-[#f6ff54] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
+        <div className="bg-[#f2c40a] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
           <div className="relative">
-            <HastTag bgColor={"bg-black"} textColor=" text-[#f6ff54] " label="  Origin Booth" />
+            <HastTag bgColor={"bg-black"} textColor="text-[#feff63]" label="Photo booth" />{" "}
             <Image
-              src={BnrImg2}
-              width={800}
-              height={500}
+              src={BnrImg3}
+              width={500}
+              height={300}
               alt="Chào mừng bạn đến với Rainbow Booth"
-              data-aos="zoom-in"
-              // loading="lazy"
+              className="max-h-[400px] border-2 border-white"
+              loading="lazy"
             />
             <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
               <span className=" font-semibold ">Origin Booth</span>{" "}
@@ -127,6 +114,47 @@ function BannerBoxRightSlide() {
                 360 with
                 <span className="text-gradient"> Rainbow</span>
               </span>{" "}
+              <span className="">Our most versatile Photo Booth</span>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide className="">
+        <div className="bg-[#aec581] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
+          <div className="relative">
+            <HastTag bgColor={"bg-[#00bbdc]"} textColor="text-white" label="Rainbow booth" />{" "}
+            <Image
+              src={BnrImg5}
+              width={500}
+              height={300}
+              alt="Chào mừng bạn đến với Rainbow Booth"
+              loading="lazy"
+              className="max-h-[400px] border-2 border-white"
+            />
+            <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
+              <span className=" font-semibold ">Origin Booth</span>{" "}
+              <span className="">Our most versatile Photo Booth</span>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="">
+        <div className="bg-[#2d90cf] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
+          <div className="relative">
+            <HastTag bgColor={"bg-[#d31f7e]"} textColor="text-white" label="Origin Booth" />
+
+            <Image
+              src={BnrImg2}
+              width={800}
+              height={500}
+              alt="Chào mừng bạn đến với Rainbow Booth"
+              data-aos="zoom-in"
+              className="border-2 border-white"
+              // loading="lazy"
+            />
+            <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
+              <span className=" font-semibold ">Origin Booth</span>{" "}
               <span className="">Our most versatile Photo Booth</span>
             </div>
           </div>

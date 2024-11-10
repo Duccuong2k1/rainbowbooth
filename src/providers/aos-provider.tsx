@@ -2,6 +2,7 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { ToastContainer } from "react-toastify"
 
 export const AOSProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
@@ -15,5 +16,10 @@ export const AOSProvider = ({ children }: { children: React.ReactNode }) => {
     }
   }, [])
 
-  return <>{children}</>
+  return (
+    <>
+      {children}
+      <ToastContainer position="bottom-center" theme="colored" />
+    </>
+  )
 }

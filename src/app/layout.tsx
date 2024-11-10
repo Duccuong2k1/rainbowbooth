@@ -4,6 +4,7 @@ import "./globals.css"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import { AOSProvider } from "@/providers/aos-provider"
+import Social from "@/components/Social"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -64,6 +65,7 @@ export default function RootLayout({
         <AOSProvider>
           <Header />
           <div className="w-full min-h-screen">{children}</div>
+          <Social />
           <Footer />
         </AOSProvider>
       </body>

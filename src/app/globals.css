@@ -3,6 +3,8 @@
 @tailwind utilities;
 @import "swiper/css";
 @import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+@import "react-toastify/dist/ReactToastify.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300..700&display=swap");
@@ -121,8 +123,8 @@ body {
 .text-cs-white {
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 5.37728px;
-  line-height: 32.7376px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
   text-transform: uppercase;
 }
 /* BUTTON====== */
@@ -168,7 +170,7 @@ body {
   position: fixed;
   bottom: 30px;
   right: 40px;
-  padding: 10px 15px;
+  padding: 10px 12px;
   background-color: #f6ff54;
   color: #000;
   border: none;

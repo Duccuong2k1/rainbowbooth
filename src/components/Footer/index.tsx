@@ -6,49 +6,8 @@ import { cn } from "@/lib/utils"
 
 export default function Footer() {
   return (
-    <footer className=" pb-10 pt-40 container">
-      {/* <section className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-24">
-        <div className="">
-          <Link href={"/"} className="flex flex-col  mb-6 ">
-        
-            <Image src={LogoDefault} width={150} height={60} alt="Logo rainbow booth" />
-          </Link>
-          <p className="text-white">You need to try this Colour Your Moments Make your party memorable and fun</p>
-        </div>
-        <div>
-          <div className="text-xl font-semibold capitalize mb-6 text-white">Features Us</div>
-          <p className="text-white mb-3 flex flex-row items-center gap-2">
-            <FaCheck /> <span>Colour Your Moments</span>{" "}
-          </p>
-          <p className="text-white mb-3  flex flex-row items-center gap-2">
-            <FaCheck /> <span>Make your party memorable and fun</span>{" "}
-          </p>
-          <p className="text-white mb-3 flex flex-row items-center gap-2">
-            <FaCheck /> <span>Anything you need</span>{" "}
-          </p>
-        </div>
-
-        <div>
-          <div className="text-xl font-semibold capitalize text-white">Follow us on Social</div>
-          <p className="text-white my-6">Frequent publications of all the news in photography with tips and ideas</p>
-          <div className="flex flex-row items-center justify-start gap-3 text-white">
-            <Link href={"/"} className="text-xl hover:text-red-500">
-              <FaYoutube />
-            </Link>
-            <Link href={"/"} className="text-xl hover:text-blue-500">
-              <FaFacebookF />
-            </Link>
-            <Link href={"/"} className="text-xl hover:text-orange-500">
-              <RiInstagramFill />
-            </Link>
-            <Link href={"/"} className="text-xl hover:text-blue-500">
-              <FaTwitter />
-            </Link>
-          </div>
-        </div>
-      </section> */}
-
-      <div className="flex md:flex-row flex-col justify-between items-start gap-10">
+    <footer className=" pb-10 pt-40 ">
+      <div className="flex md:flex-row flex-col justify-between items-center gap-10 pb-5 container">
         <div className="flex flex-col items-center justify-center gap-4 text-center w-full lg:w-[30%] ">
           <Link href={"/"} className="flex flex-col  mb-3 ">
             <Image src={LogoDefault} width={150} height={60} alt="Logo rainbow booth" />
@@ -76,7 +35,7 @@ export default function Footer() {
           </div>
           <p className="text-sm text-csText">Info@rainbowbooth.com.vn</p>
         </div>
-        <div className=" w-full lg:w-[50%] grid grid-cols-2 lg:grid-cols-none  md:gap-2 gap-4">
+        <div className=" w-full lg:w-[50%] grid grid-cols-1 lg:grid-cols-none  md:gap-2 gap-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <FooterItemInfo
               borderColor="border-csYellow"
@@ -92,11 +51,16 @@ export default function Footer() {
             />
             <FooterItemInfo
               borderColor="border-csYellow"
-              title="Prints"
-              desc="Print immediately after selecting publish"
+              title="Follow us"
+              descNode={
+                <div className="text-csText">
+                  <p>Facebook: Rainbow Booth</p>
+                  <p>Instagram: event.rainbowbooth</p>
+                </div>
+              }
             />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
             <FooterItemInfo
               borderColor="border-csYellow"
               title="locations"
@@ -125,8 +89,11 @@ export default function Footer() {
                 </div>
               }
             />
-          </div>
+          </div> */}
         </div>
+      </div>
+      <div className="text-center text-csText pt-4 border-t text-sm border-gray-600 mt-6">
+        Copyright @2024 by Rainbow booth
       </div>
     </footer>
   )
