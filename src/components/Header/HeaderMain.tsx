@@ -34,7 +34,7 @@ export default function HeaderMain() {
         ))}
         <button className="cs-btn" onClick={handleContactBtn}>
           <span className="lg:text-center font-semibold" data-aos="zoom-in-up">
-            Contact
+            Liên hệ
           </span>
         </button>
       </div>

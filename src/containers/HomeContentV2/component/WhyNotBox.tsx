@@ -18,7 +18,7 @@ export default function WhyNotBox({}: Props) {
         <div className="w-full lg:w-1/2">
           <TitleWrapper
             bgColor="bg-[#feff63]"
-            label="why hire a photo booth?"
+            label="Tại sao nên thuê rainbow booth?"
             textColor="text-black"
             className="text-lg mb-10"
           />

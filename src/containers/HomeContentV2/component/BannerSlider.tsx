@@ -19,15 +19,15 @@ export default function BannerSlider() {
     <section className="grid grid-cols-1 lg:grid-cols-2 items-center">
       <div className="background min-h-screen flex flex-col items-center justify-center lg:pl-[4rem] px-4  lg:px-20 ">
         <h1
-          className="text-center lg:leading-[120px] text-[50px] text-border font-semibold px-4 lg:text-nowrap "
+          className="text-center font-sour-gummy lg:leading-[120px] text-[50px] text-border font-semibold px-4 "
           data-aos="zoom-in"
         >
-          Photo booth
+          colour your moments
         </h1>
         <div className="text-[30px] text-white font-semibold px-4 text-center my-6 uppercase" data-aos="zoom-in">
-          classic. instant prints.
+         Photobooth
         </div>
-        <p className="lg:text-lg text-md text-white text-center w-full lg:w-[80%]" data-aos="zoom-in-down">
+        <p className="font-sour-gummy lg:text-lg text-md text-white text-center w-full lg:w-[80%]" data-aos="zoom-in-down">
           Dịch vụ photo booth độc đáo mang đến cho bạn trải nghiệm chụp ảnh lấy liền sôi động và đầy màu sắc. Với thiết
           kế độc đáo, được làm từ gỗ tự nhiên kết hợp với công nghệ hiện đại, chúng tôi cam kết sẽ cho ra những tấm ảnh
           hết sức vui nhộn và đáng nhớ dành cho bạn!
