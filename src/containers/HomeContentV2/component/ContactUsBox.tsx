@@ -16,13 +16,13 @@ export default function ContactUsBox({}: Props) {
         <div className="border-csYellow w-[100px] h-[100px] border-2 absolute right-32 -bottom-[60px] animate-bounce"></div>
         <h3
           className={cn(
-            " p-3 text-gradient inline-block font-semibold uppercase text-3xl w-1/2 text-center leading-[50px] tracking-widest ",
-            "absolute top-1/4 left-1/3 transform -translate-x-1/2 -translate-y-1/2",
+            " p-3 text-gradient inline-block font-semibold uppercase text-3xl w-3/4 text-center leading-[50px] tracking-widest ",
+            "absolute top-1/4 left-[100px] transform -translate-x-1/2 -translate-y-1/2",
             "animate-pulse",
           )}
           data-aos="zoom-in"
         >
-          get pricing & info
+          Nhận giá booth & thông tin
         </h3>
         <TitleWrapper
           bgColor={"bg-csYellow"}

@@ -2,7 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import React, { useCallback, useState } from "react"
-import LogoDefault from "@/public/image/logo-rainbow.png"
+import LogoDefault from "@/public/RAINBOW-LOGO.gif"
 import { MENU_MAIN } from "@/constants/default"
 import { useScreen } from "@/hooks/useScreen"
 import { HiOutlineMenuAlt3 } from "react-icons/hi"
@@ -34,7 +34,7 @@ export default function HeaderMain() {
         ))}
         <button className="cs-btn" onClick={handleContactBtn}>
           <span className="lg:text-center font-semibold" data-aos="zoom-in-up">
-            Contact
+            Liên hệ
           </span>
         </button>
       </div>
@@ -85,7 +85,7 @@ function MenuItem({ label, href }: { label: string; href: string }) {
     <Link
       href={href || "/"}
       className={cn(
-        "font-normal text-md hover:text-yellow-400 text-nowrap px-2 py-1",
+        "font-normal text-md hover:text-csPink hover:border-csPink hover:font-medium text-nowrap px-2 py-1",
         pathName === href && "border-b border-white",
       )}
     >

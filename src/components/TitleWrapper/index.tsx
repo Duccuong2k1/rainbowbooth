@@ -12,7 +12,7 @@ export default function TitleWrapper({ bgColor, textColor, label, className }: P
   return (
     <h3
       className={cn(
-        " p-3 inline-block font-semibold uppercase text-2xl leading-6 tracking-widest",
+        " p-3 inline-block font-semibold uppercase text-2xl leading-6 tracking-widest font-sour-gummy",
         bgColor,
         textColor,
         className,

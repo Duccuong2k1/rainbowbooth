@@ -17,8 +17,8 @@ export default function EventsParticipation() {
           <TitleWrapper
             bgColor={"bg-[#8b0688]"}
             textColor="text-white"
-            label="Events đã góp mặt"
-            className="md:w-1/2 w-full"
+            label="Sự kiện đã góp mặt"
+            className="md:w-3/5 w-full "
           />
         </div>
         <div>

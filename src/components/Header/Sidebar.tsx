@@ -60,7 +60,7 @@ export function Sidebar(props: SidebarProps) {
             ))}
             <button className="cs-btn" onClick={handleContactBtn}>
               <span className="lg:text-center font-semibold" data-aos="zoom-in-up">
-                Contact
+                Liên hệ
               </span>
             </button>
             <div className="flex flex-row items-center justify-center mt-6 gap-3 text-white  w-full py-3">

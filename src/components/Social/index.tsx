@@ -1,3 +1,5 @@
+import { IconFace, IconInstag, IconTiktok } from "@/constants/event"
+import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa"
@@ -11,14 +13,38 @@ export default function Social({}: Props) {
       className="flex fixed lg:right-[60px] bottom-6 right-6 lg:bottom-[40px] z-30 flex-col items-start justify-center gap-3 text-white"
       data-aos="zoom-in"
     >
-      <Link href={"/"} className="text-xl text-black bg-white p-3 ">
-        <FaTiktok className="animate-pulse" />
+      <Link href={"https://www.facebook.com/RainbowBoothVN"}>
+        {/* <FaFacebookF className="animate-pulse" /> */}
+        <Image
+          src={IconFace}
+          loading="lazy"
+          width={45}
+          height={45}
+          alt="Icon tiktok"
+          className="hover:scale-105 transition-all"
+        />
       </Link>
-      <Link href={"https://www.facebook.com/RainbowBoothVN"} className="text-xl bg-white p-3  text-blue-500">
-        <FaFacebookF className="animate-pulse" />
+      <Link href={"/"}>
+        {/* <FaTiktok className="animate-pulse" /> */}
+        <Image
+          src={IconTiktok}
+          loading="lazy"
+          width={45}
+          height={45}
+          alt="Icon tiktok"
+          className="hover:scale-105 transition-all"
+        />
       </Link>
-      <Link href={"https://www.instagram.com/event.rainbowbooth/"} className="text-xl bg-white p-3  text-[#ff2145]">
-        <RiInstagramFill className="animate-pulse" />
+      <Link href={"https://www.instagram.com/event.rainbowbooth/"}>
+        {/* <RiInstagramFill className="animate-pulse" /> */}
+        <Image
+          src={IconInstag}
+          loading="lazy"
+          width={40}
+          height={40}
+          alt="Icon tiktok"
+          className="hover:scale-105 transition-all"
+        />
       </Link>
     </div>
   )

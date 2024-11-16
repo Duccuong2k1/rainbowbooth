@@ -21,6 +21,13 @@ import Img3 from "@/public/image/img-3.jpg";
 import Img5 from "@/public/image/img-5.jpg";
 import Img6 from "@/public/image/img-6.jpg";
 import Img7 from "@/public/image/img-7.jpg";
+import Carousel1 from "@/public/image/bnr-img-1.jpg";
+import Carousel2 from "@/public/image/bnr-img-2.jpg";
+import Carousel3 from "@/public/image/bnr-img-3.jpg";
+import CarouselImg360 from "@/public/image/img-360.webp";
+import IconTiktok from "@/public/icon/icon-tiktok.webp";
+import IconFace from "@/public/icon/icon-facebook.png";
+import IconInstag from "@/public/icon/icon-insta.webp";
 
 
 
@@ -30,5 +37,6 @@ export {
     EventImg1, EventImg2,
     EventImg3, EventImg4, EventImg5, EventImg6, EventImg7,
     EventImg8, EventImg9, BlogImg1, BlogImg2, BlogImg3,
-    BnrImg1, BnrImg2, BnrImg3, BnrImg4, BnrImg5, Img1, Img2, Img3, Img5, Img6, Img7
+    BnrImg1, BnrImg2, BnrImg3, BnrImg4, BnrImg5, Img1, Img2, Img3, Img5, Img6, Img7, Carousel1, Carousel2, Carousel3, CarouselImg360,
+    IconFace, IconInstag, IconTiktok
 }

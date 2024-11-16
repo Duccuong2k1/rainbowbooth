@@ -59,15 +59,15 @@ export default function FormContact() {
         <TitleWrapper
           bgColor={"bg-[#d31f7e]"}
           textColor="text-white"
-          label="Contact US!"
-          className="text-3xl absolute -top-10 left-5"
+          label="Liên hệ chúng tôi"
+          className="text-lg lg:text-3xl absolute -top-10 left-5"
         />
         <label className="text-csText font-light">
-          Name <span className="text-gray-400 text-sm">(required)</span>{" "}
+          Họ và tên <span className="text-gray-400 text-sm">(bắt buộc)</span>{" "}
         </label>
         <input
           type="text"
-          {...register("user_name", { required: "Name is required" })}
+          {...register("user_name", { required: " Họ và tên không được để trống" })}
           className={`w-full p-2 text-white rounded-md bg-transparent focus:outline-none border focus:ring-2 ${
             errors.user_name ? "focus:ring-red-500" : "focus:ring-blue-500"
           }`}
@@ -75,12 +75,12 @@ export default function FormContact() {
         {errors.user_name?.message && <p className="text-red-500 text-sm">{String(errors.user_name.message)}</p>}
 
         <label className="text-csText font-light">
-          Email <span className="text-gray-400 text-sm">(required)</span>{" "}
+          Email <span className="text-gray-400 text-sm">(bắt buộc)</span>{" "}
         </label>
         <input
           type="email"
           {...register("user_email", {
-            required: "Email is required",
+            required: "Email không được để trống",
             pattern: {
               value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
               message: "Please enter a valid email address",
@@ -92,12 +92,12 @@ export default function FormContact() {
         />
         {errors.user_email?.message && <p className="text-red-500 text-sm">{String(errors.user_email.message)}</p>}
         <label className="text-csText font-light">
-          Phone <span className="text-gray-400 text-sm">(required)</span>{" "}
+          Số điện thoại <span className="text-gray-400 text-sm">(bắt buộc)</span>{" "}
         </label>
         <input
           type="text"
           {...register("phone_number", {
-            required: "PhoneNumber is required",
+            required: "Số điện thoại không được để trống",
           })}
           className={`w-full p-2  text-white  rounded-md bg-transparent focus:outline-none border focus:ring-2  ${
             errors.phone_number ? "focus:ring-red-500" : "focus:ring-blue-500"
@@ -106,10 +106,10 @@ export default function FormContact() {
         {errors.phone_number?.message && <p className="text-red-500 text-sm">{String(errors.phone_number.message)}</p>}
 
         <label className="text-csText font-light">
-          Message <span className="text-gray-400 text-sm">(required)</span>{" "}
+          Ghi chú <span className="text-gray-400 text-sm">(bắt buộc)</span>{" "}
         </label>
         <textarea
-          {...register("message", { required: "Message is required" })}
+          {...register("message", { required: "Ghi chú không được để trống" })}
           className={`w-full text-white p-2 rounded-md bg-transparent focus:outline-none border focus:ring-2  ${
             errors.message ? "focus:ring-red-500" : "focus:ring-blue-500"
           } h-32 resize-none`}
@@ -123,7 +123,7 @@ export default function FormContact() {
           )}
           disabled={isLoading}
         >
-          Send request
+          Gửi cho chúng tôi
         </button>
       </form>
     </div>
