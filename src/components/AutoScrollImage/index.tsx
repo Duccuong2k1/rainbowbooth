@@ -17,7 +17,7 @@ import {
 } from "@/constants/event"
 import Image from "next/image"
 import { useScreen } from "@/hooks/useScreen"
-import Slider from "react-slick";
+import Slider from "react-slick"
 
 const images = [EventImg4, EventImg5, EventImg6, EventImg8, Img1, Img2, Img3, Img5, Img6, Img7]
 
@@ -34,8 +34,9 @@ const AutoScrollImages: React.FC = () => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    arrows: false
-  };
+    arrows: false,
+    pauseOnHover: false,
+  }
 
   return (
     <div className="slider-container">

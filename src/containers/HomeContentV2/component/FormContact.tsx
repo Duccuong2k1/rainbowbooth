@@ -60,7 +60,7 @@ export default function FormContact() {
           bgColor={"bg-[#d31f7e]"}
           textColor="text-white"
           label="Liên hệ chúng tôi"
-          className="text-3xl absolute -top-10 left-5"
+          className="text-lg lg:text-3xl absolute -top-10 left-5"
         />
         <label className="text-csText font-light">
           Họ và tên <span className="text-gray-400 text-sm">(bắt buộc)</span>{" "}
@@ -123,7 +123,7 @@ export default function FormContact() {
           )}
           disabled={isLoading}
         >
-          Send request
+          Gửi cho chúng tôi
         </button>
       </form>
     </div>

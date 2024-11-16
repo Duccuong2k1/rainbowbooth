@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import LogoDefault from "@/public/image/logo-rainbow.png"
+import LogoDefault from "@/public/RAINBOW-LOGO.gif"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 

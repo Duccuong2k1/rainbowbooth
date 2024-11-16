@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 const config: Config = {
   content: [
@@ -23,6 +24,9 @@ const config: Config = {
         csText: "#ececec",
         csPink: "#d73985",
         csBlack: "#1a1a1a",
+      },
+      fontFamily: {
+        sourGummy: ['"Sour Gummy"', ...fontFamily.sans],
       },
     },
   },
