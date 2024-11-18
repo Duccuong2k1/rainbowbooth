@@ -2,19 +2,28 @@ import { IconFace, IconInstag, IconTiktok } from "@/constants/event"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import { FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa"
-import { RiInstagramFill } from "react-icons/ri"
+import { BsFillChatSquareDotsFill } from "react-icons/bs"
 
 type Props = {}
 
 export default function Social({}: Props) {
   return (
     <div
-      className="flex fixed lg:right-[60px] bottom-6 right-6 lg:bottom-[40px] z-30 flex-col items-start justify-center gap-3 text-white"
+      className="flex fixed items-center lg:right-[60px] bottom-6 right-6 lg:bottom-[40px] z-30 flex-col  justify-center gap-3 text-white"
       data-aos="zoom-in"
     >
+      <Link
+        href={"#contact"}
+        className="relative rounded-full flex flex-col border-csYellow  items-center text-white text-center py-2.5 px-[14px] border gap-1 bg-black animate-border "
+      >
+        <span className="absolute inset-0 rounded-full border-2 border-csYellow opacity-80 animate-ping z-[-1]"></span>
+
+        <span className="text-xl ">
+          <BsFillChatSquareDotsFill />
+        </span>
+        <span className="text-[8px] font-semibold   animate-bounce">Liên hệ</span>
+      </Link>
       <Link href={"https://www.facebook.com/RainbowBoothVN"}>
-        {/* <FaFacebookF className="animate-pulse" /> */}
         <Image
           src={IconFace}
           loading="lazy"
