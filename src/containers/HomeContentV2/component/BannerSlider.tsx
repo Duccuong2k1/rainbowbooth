@@ -46,8 +46,9 @@ export default function BannerSlider() {
         </p>
       </div>
 
-      <div className="min-h-screen overflow-y-auto">
-        <BannerListColumn />
+      <div className="">
+        {/* <BannerListColumn /> */}
+        <BannerBoxRightSlide />
       </div>
     </section>
   )
@@ -146,7 +147,7 @@ function BannerBoxRightSlide() {
       }}
       loop={true}
       autoplay={{
-        delay: 3500,
+        delay: 3000,
         disableOnInteraction: false,
       }}
       mousewheel={true}
@@ -177,7 +178,7 @@ function BannerBoxRightSlide() {
       <SwiperSlide className="">
         <div className="bg-[#f2c40a] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
           <div className="relative max-h-[400px] max-w-[400px]">
-            <HastTag bgColor={"bg-black"} textColor="text-[#feff63]" label="Photo booth" />{" "}
+            <HastTag bgColor={"bg-black"} textColor="text-[#feff63]" label="Original booth" />{" "}
             <Image
               src={Carousel1}
               width={400}
@@ -187,8 +188,8 @@ function BannerBoxRightSlide() {
               loading="lazy"
             />
             <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
-              <span className=" font-semibold ">Origin Booth</span>{" "}
-              <span className="">Our most versatile Photo Booth</span>
+              <span className=" font-semibold text-gradient">Original booth booth</span>{" "}
+              {/* <span className="">Our most versatile Original booth Booth</span> */}
             </div>
           </div>
         </div>
@@ -205,13 +206,7 @@ function BannerBoxRightSlide() {
               loading="lazy"
               className="max-h-[400px] border-2 border-white"
             />
-            {/* <iframe
-              width={isLg ? "400" : "340"}
-              height={isLg ? "400" : "315"}
-              src="https://www.youtube.com/embed/oCD0AAUEa2A?si=wKhTiRiNBi6nKYzh"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe> */}
+
             <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
               <span className=" font-semibold text-white">
                 360 with
@@ -224,26 +219,26 @@ function BannerBoxRightSlide() {
       </SwiperSlide>
 
       <SwiperSlide className="">
-        <div className="bg-[#aec581] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
+        <div className="bg-[#ffb3b3] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
           <div className="relative  max-h-[400px] max-w-[400px]">
-            <HastTag bgColor={"bg-[#00bbdc]"} textColor="text-white" label="Rainbow booth" />{" "}
+            <HastTag bgColor={"bg-[#00bbdc]"} textColor="text-white" label="Original booth" />{" "}
             <Image
               src={Carousel2}
               width={400}
               height={400}
-              alt="Chào mừng bạn đến với Rainbow Booth"
+              alt="Chào mừng bạn đến với Original Booth"
               loading="lazy"
               className="max-h-[400px] border-2 border-white"
             />
             <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
-              <span className=" font-semibold ">Origin Booth</span>{" "}
-              <span className="">Our most versatile Photo Booth</span>
+              <span className=" font-semibold text-gradient">Original booth</span>{" "}
+              <span className="">Our most versatile Original Booth</span>
             </div>
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide className="">
-        <div className="bg-[#2d90cf] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
+        <div className="bg-[#b38dff] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
           <div className="relative  max-h-[400px] max-w-[400px]">
             <HastTag bgColor={"bg-[#d31f7e]"} textColor="text-white" label="Origin Booth" />
 
@@ -257,7 +252,7 @@ function BannerBoxRightSlide() {
               // loading="lazy"
             />
             <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
-              <span className=" font-semibold ">Origin Booth</span>{" "}
+              <span className=" font-semibold text-gradient">Origin Booth</span>{" "}
               <span className="">Our most versatile Photo Booth</span>
             </div>
           </div>
