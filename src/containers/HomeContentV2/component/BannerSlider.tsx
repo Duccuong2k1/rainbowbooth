@@ -188,7 +188,7 @@ function BannerBoxRightSlide() {
               loading="lazy"
             />
             <div className="flex gap-2 flex-row items-center justify-end my-4 text-[#1a1a1a] flex-wrap">
-              <span className=" font-semibold text-gradient">Original booth booth</span>{" "}
+              <span className=" font-semibold text-gradient">The Original booth </span>{" "}
               {/* <span className="">Our most versatile Original booth Booth</span> */}
             </div>
           </div>
@@ -240,7 +240,7 @@ function BannerBoxRightSlide() {
       <SwiperSlide className="">
         <div className="bg-[#b38dff] min-h-screen px-[1rem] lg:px-[4rem] flex flex-row items-center justify-center">
           <div className="relative  max-h-[400px] max-w-[400px]">
-            <HastTag bgColor={"bg-[#d31f7e]"} textColor="text-white" label="Origin Booth" />
+            <HastTag bgColor={"bg-[#d31f7e]"} textColor="text-white" label="Original Booth" />
 
             <Image
               src={Carousel3}
