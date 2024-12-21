@@ -7,7 +7,7 @@ import {
   EventImg6,
   EventImg7,
   EventImg9,
-} from "@/constants/event"
+} from "../../../constants/assets-local"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import React from "react"

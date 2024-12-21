@@ -1,6 +1,6 @@
 "use client"
 import HastTag from "@/components/HastTag"
-import { BnrImg3, BnrImg4, BnrImg5, EventImg9 } from "@/constants/event"
+import { BnrImg3, BnrImg4, BnrImg5, EventImg9 } from "../../../constants/assets-local"
 import Image from "next/image"
 import Link from "next/link"
 import React, { useState } from "react"

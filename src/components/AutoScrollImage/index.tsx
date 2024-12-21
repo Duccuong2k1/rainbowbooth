@@ -14,7 +14,7 @@ import {
   Img5,
   Img6,
   Img7,
-} from "@/constants/event"
+} from "../../constants/assets-local"
 import Image from "next/image"
 import { useScreen } from "@/hooks/useScreen"
 import Slider from "react-slick"

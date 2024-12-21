@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Autoplay } from "swiper/modules"
 
 import Image from "next/image"
-import { Carousel1, Carousel2, Carousel3, CarouselImg360 } from "@/constants/event"
+import { Carousel1, Carousel2, Carousel3, CarouselImg360 } from "../../../constants/assets-local"
 import BgLeft from "@/public/bg-left.jpg"
 
 import HastTag from "@/components/HastTag"

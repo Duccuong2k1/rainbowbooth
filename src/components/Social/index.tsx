@@ -1,8 +1,8 @@
-import { IconFace, IconInstag, IconTiktok } from "@/constants/event"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { BsFillChatSquareDotsFill } from "react-icons/bs"
+import { IconFacebook, IconInstagram, IconTikTok } from "../../constants/assets-local"
 
 type Props = {}
 
@@ -25,7 +25,7 @@ export default function Social({}: Props) {
       </Link>
       <Link href={"https://www.facebook.com/RainbowBoothVN"}>
         <Image
-          src={IconFace}
+          src={IconFacebook}
           loading="lazy"
           width={45}
           height={45}
@@ -33,10 +33,11 @@ export default function Social({}: Props) {
           className="hover:scale-105 transition-all"
         />
       </Link>
+
       <Link href={"/"}>
         {/* <FaTiktok className="animate-pulse" /> */}
         <Image
-          src={IconTiktok}
+          src={IconTikTok}
           loading="lazy"
           width={45}
           height={45}
@@ -47,7 +48,7 @@ export default function Social({}: Props) {
       <Link href={"https://www.instagram.com/event.rainbowbooth/"}>
         {/* <RiInstagramFill className="animate-pulse" /> */}
         <Image
-          src={IconInstag}
+          src={IconInstagram}
           loading="lazy"
           width={40}
           height={40}

@@ -5,12 +5,13 @@ import React, { useCallback } from "react"
 
 import { SlideOut } from "../SlideOut"
 import { MENU_MAIN } from "@/constants/default"
-import LogoDefault from "@/public/image/logo-rainbow.png"
+
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa"
 import { RiInstagramFill } from "react-icons/ri"
 import { usePathname, useRouter } from "next/navigation"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+import { LogoDefault } from "@/constants/assets-local"
 interface SidebarProps {
   isOpen: boolean
   onClose: () => void

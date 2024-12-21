@@ -1,9 +1,10 @@
 import Link from "next/link"
 import React from "react"
-import LogoDefault from "@/public/RAINBOW-LOGO.gif"
+
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
+const LogoDefault = "/assets/images/RAINBOW-LOGO.gif"
 export default function Footer() {
   return (
     <footer className=" pb-10 pt-40 ">

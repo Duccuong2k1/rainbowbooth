@@ -1,7 +1,7 @@
 "use client"
 import HastTag from "@/components/HastTag"
 import TitleWrapper from "@/components/TitleWrapper"
-import { EventImg9 } from "@/constants/event"
+import { EventImg9 } from "../../../constants/assets-local"
 import { useScreen } from "@/hooks/useScreen"
 import { cn } from "@/lib/utils"
 import Image from "next/image"

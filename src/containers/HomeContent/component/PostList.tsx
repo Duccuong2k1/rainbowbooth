@@ -1,4 +1,4 @@
-import { BlogImg1, BlogImg2, BlogImg3 } from "@/constants/event"
+import { BlogImg1, BlogImg2, BlogImg3 } from "../../../constants/assets-local"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import React from "react"

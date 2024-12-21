@@ -2,13 +2,15 @@
 import Image from "next/image"
 import Link from "next/link"
 import React, { useCallback, useState } from "react"
-import LogoDefault from "@/public/RAINBOW-LOGO.gif"
+
 import { MENU_MAIN } from "@/constants/default"
 import { useScreen } from "@/hooks/useScreen"
 import { HiOutlineMenuAlt3 } from "react-icons/hi"
 import { Sidebar } from "./Sidebar"
 import { usePathname, useRouter } from "next/navigation"
 import { cn } from "@/lib/utils"
+// import asset
+const LogoDefault = "/assets/images/RAINBOW-LOGO.gif"
 
 export default function HeaderMain() {
   const isLg = useScreen("lg")
